@@ -18,17 +18,59 @@
         const title = document.getElementById("myDiv")
 
         function Title() {
-            return <h1><center>Hello</center></h1>
+            return <h1>Hello</h1>
+        }
+        function Myname(prop) {
+            return <section>  <Title /> <h1>{prop.name}</h1> </section>
+        }
+        function MynameandAge(prop) {
+            return <section> <h1>{prop.name}</h1> <h1>{prop.age}</h1></section>
+        }
+        function MyVideo(prop) {
+            return <section> <video controls src={prop.src}> </video><img src={prop.image} />  </section>
+
         }
 
-        
+
+
 
 
         ReactDOM.render(
-            <  Title />
+            // <section>
+            //     <  Myname name="tikva" />
+            //     <  Myname name="keren" />
+            //     <  Myname name="eden" />
+            //     <  Myname name="yafit" />
+            //     <  Myname name="tjkikva" />
+            //     <  Myname name="ksaeren" />
+            //     <  Myname name="ydeafit" />
+            //     <  Myname name="yargtfit" />
+            //     <  Myname name="keterren" />
+            //     <  Myname name="eddsen" />
 
-            , title
-        )
+            // </section>
+
+            // <section>
+            //    <MynameandAge name = "tikva" age = "25"/>
+            //    <MynameandAge name = "tikva" age = "25"/>
+            //    <MynameandAge name = "tikva" age = "25"/>
+            //    <MynameandAge name = "tikva" age = "25"/>
+            //    <MynameandAge name = "tikva" age = "25"/>
+            //    <MynameandAge name = "tikva" age = "25"/>
+            //    <MynameandAge name = "tikva" age = "25"/>
+            //    <MynameandAge name = "tikva" age = "25"/>
+            //    <MynameandAge name = "tikva" age = "25"/>
+            //    <MynameandAge name = "tikva" age = "25"/>
+            // </section>
+            <section>
+                < MyVideo  src ="https://player.vimeo.com/external/567908553.hd.mp4?s=41a393225974d41c2df035768055361dd75ddae3&profile_id=174"  image ="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg "/>
+
+            </section>
+
+
+
+                , title
+                )
 
     </script>
 
